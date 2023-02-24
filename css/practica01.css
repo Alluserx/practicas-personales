@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500;1,600&display=swap');
+    
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(limegreen 50%, white 50%);
+}
+.galeria {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    top: 45%;
+}
+
+.contenedor-principal { /*contiene a texto profesional */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /*la imagen es tratada como texto*/
+    font-size: 20px ;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    background-color: rgb(91, 67, 169);
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0 , 0, 0, 2);
+    margin: 20px;
+} 
+.contenedor-principal:hover {
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.texto-profesional {
+    display: flex;
+    align-items: center; /* eje Y*/
+    text-align: center; /*eje x*/
+    font-size: 20px;
+    margin: 15px;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 3px;
+    overflow: auto;
+    }
+
+    .texto-profesional:hover {
+        background-color: limegreen;
+    }
+
+    .imagen {
+        border-radius: 2px;
+        margin-bottom: 10px;
+        height: 100px;
+        width: 100px;
+    }
+    .imagen:hover{
+        opacity: 0;
+    }
